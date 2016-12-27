@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href ="../static/w3.css">
+        <title>Horoscopes</title>
+</head>
+<body>
+<div class = "w3-row-padding">
+
+<div class= "w3-threequarter" >
+
+<div class="w3-container" align = "center">
+<h5 class="w3-rest w3-text-black w3-container  ">Please insert your date of birth, click the button and wait for the result:</h5>
+</div>
+<div class="w3-row-padding w3-container w3-margin" align="center">
+<p id ="try"></p>
+<div class="w3-col m1 w3-container w3-center ">
+<label>Day</label>
+<input id = "day" name ="day" class="w3-input w3-border-yellow w3-center" placeholder="d" />
+</div>
+<div class="w3-col m1 w3-container w3-center">
+<label>Month</label>
+<input id = "month" name = "month" placeholder="m" class="w3-input w3-border-yellow w3-center"/>
+</div>
+<div class="w3-col m1 w3-container w3-center ">
+<label>Year</label>
+<input id ="year" name = "year" placeholder="yyyy"class="w3-input w3-border-yellow w3-center"/>
+
+</div>
+</div>
+<div class = "w3-row">
+<div class="w3-container w3-margin w3-col m3 w3-center">
+<button id = "submit" onclick = "getDOB()"class="w3-btn w3-red w3-round" > Submit</button>
+</div>
+</div>
+</div>
+
+<div class="w3-half">
+    <p>Your sign is:</p>
+<p id="result" class="w3-panel w3-container "></p>
+<h1 id="test"></h1>
+</div>
+</div>
+
+<script type="text/javascript" src="../static/main.js"></script>
+</body>
+</html>

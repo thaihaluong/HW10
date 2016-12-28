@@ -40,9 +40,9 @@ function getDOB() {
         document.getElementById("result").innerHTML = "Sagittarius";
     }
 
-    else if (makedate(year-1,12,22) <= date && date <= makedate(year,1,19)) {
+    /*else if (makedate(year-1,12,22) <= date && date <= makedate(year,1,19)) {
         document.getElementById("result").innerHTML = "Capricorn";
-    }
+    }*/
 
     else if (makedate(year,1,20) <= date && date <= makedate(year,2,18)) {
         document.getElementById("result").innerHTML = "Aquarius";
@@ -67,6 +67,8 @@ function getDOB() {
     else if (makedate(year,6,21) <= date && date <= makedate(year,7,22)) {
         document.getElementById("result").innerHTML = "Pisces";
     }
+    else {document.getElementById("result").innerHTML = "Capricorn";}
+
 
 }
 
